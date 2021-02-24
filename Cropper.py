@@ -3,7 +3,7 @@ import numpy as np
 import imutils
 
 
-# Parallax Correction
+# Parallax Correction (Skip Below)
 def perspective_transform(image, corners):
     def order_corner_points(corners):
         # Separate corners into individual points
@@ -48,7 +48,7 @@ def perspective_transform(image, corners):
 
 # Cropping the First Frame
   
-image = cv2.imread("C:/Users/siriu/Desktop/Trark/Bframe0.jpg")
+image = cv2.imread("frame0.jpg") # Remember to change the name to match your own data!
 original = image.copy()
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
@@ -72,7 +72,7 @@ cv2.imshow('rotated', rotated)
 
 # Cropping the Whole Video
 
-vidcap = cv2.VideoCapture("C:/Users/siriu/Desktop/Trark/Cav.mp4")
+vidcap = cv2.VideoCapture('[Video File]')
 success,image = vidcap.read()
 count = 0
 
