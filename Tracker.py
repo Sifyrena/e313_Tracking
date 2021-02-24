@@ -3,7 +3,7 @@ import cv2 as cv
 import argparse
 import matplotlib.pyplot as plt
 
-cap = cv.VideoCapture("C:/Users/siriu/Desktop/Trark/Test.avi")
+cap = cv.VideoCapture("Test.avi") # Replace name of your video file here.
 
 # take first frame of the video
 ret,frame = cap.read()
@@ -16,7 +16,7 @@ track_window = (x, y, w, h)
 roi = frame[y:y+h, x:x+w]
 hsv_roi =  cv.cvtColor(roi, cv.COLOR_BGR2HSV)
 
-mask = cv.inRange(hsv_roi, np.array((0., 0.,0.)), np.array((248.,255.,6.)))
+mask = cv.inRange(hsv_roi, np.array((0., 0.,0.)), np.array((248.,5.,6.))) # The Mask Color Prefers Red
 
 roi_hist = cv.calcHist([hsv_roi],[0],mask,[180],[0,180])
 
