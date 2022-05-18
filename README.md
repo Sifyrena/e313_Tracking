@@ -1,5 +1,15 @@
 # e313_Tracking
 
-The current version of Cropper is based on the code found at
+## Usage Directions
+
+Please check out the folder, and use e313.ipynb to see the tracking process in action. Alternatively, you can also run the Cropper.py and Tracker.py (in order) in your own Python IDE of choice and see the tracking mechanism interactively.
+
+### Using this on a University of Auckland Computer
+
+The code requires additional Python libraries not found on University-managed PC's, and write permission to system is needed to use the pip they come with. In short, you need your own computer for this.
+
+## External Credits
+
+The *Cropper* feature is based on the code found at
 
 https://stackoverflow.com/questions/57862682/straighten-largest-line-in-image
