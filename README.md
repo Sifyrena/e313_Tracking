@@ -11,7 +11,7 @@ The code requires additional Python libraries not found on University-managed PC
 
 ## OpenCV For Python
 
-OpenCV is a C++ library wrapped for Python, and the syntax we use here might be unfamiliar to you. This is okay.
+OpenCV is a C++ library wrapped for (mapped to) Python, and the syntax we use here might be unfamiliar to you. This is okay.
 
 ## External Code Credits
 
